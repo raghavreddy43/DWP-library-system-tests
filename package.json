@@ -1,0 +1,39 @@
+{
+  "name": "dwp-library-system-tests",
+  "version": "1.0.0",
+  "description": "Framework created using playwright and typescripts and automated",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:auth": "playwright test src/tests/auth --project=chromium",
+    "test:books": "playwright test src/tests/books --project=chromium",
+    "test:integration": "playwright test src/tests/integration --project=chromium",
+    "test:positive": "playwright test --grep @positive --project=chromium",
+    "test:negative": "playwright test --grep @negative --project=chromium",
+    "test:report": "playwright show-report",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghavreddy43/DWP-library-system-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/raghavreddy43/DWP-library-system-tests/issues"
+  },
+  "homepage": "https://github.com/raghavreddy43/DWP-library-system-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}
